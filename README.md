@@ -1,7 +1,15 @@
-# virtuabox-full screen
-### there are 2 ways :
+# Virtuabox-full screen
+### There are 2 ways :
 ### 1. ways
 #### if u want simple whole display to using without wasting time ! , and u didn't give a fu@k to additional feature try first method
+- tap on kali icon and search for display .
+
+  ![Screenshot 2023-10-18 103256](https://github.com/Esther7171/virtualox-fullscreen/assets/122229257/80988676-eecd-4e55-b3dd-9e9efb3f1f8b)#
+
+- change display according to u .
+  
+![Screenshot 2023-10-18 103312](https://github.com/Esther7171/virtualox-fullscreen/assets/122229257/0d65efb8-e6a4-4f7f-9bd5-9cb46837f731)
+
 ## 2. way 
 ### Manually install vboxguest-additions we going to continue it..
 # Why this is happend
@@ -60,13 +68,10 @@
    ```bash
    apt install gcc make perl -y
    ```
-   ***********************************************************************************************************
 - run this it download all necessary pakages :
    ```bash
-   apt install virtualbox-guest-additions-iso && apt install -y virtualbox-dkms && apt install -y virtualbox-ext-pack && apt install -y virtualbox-guest-additions-iso && apt install -y virtualbox-guest-utils && apt install -y virtualbox-guest-x11 && apt install -y virtualbox-qt && apt install -y virtualbox-source
+   apt install -y virtualbox && apt install -y virtualbox-dkms && apt install -y virtualbox-ext-pack && apt install -y virtualbox-guest-utils && apt install -y virtualbox-qt && apt install -y virtualbox-guest-additions-iso && apt install -y virtualbox-source && apt install -y virtualbox-guest-x11 && apt install -y virtualenv && apt install -y virtualenvwrapper && apt install -y virtualenvwrapper-doc  && apt install -y virtualgps  && apt install -y virtualgps 
    ```
-
-   ******************************************************************************************************************
   ```bash
    sh VBoxLinuxAdditions.run
    ```
@@ -123,7 +128,35 @@
 
    # One line command
    ```bash
-apt install vir tab*
-```
-complete it 
-installl 
+   sudo passwd root && chmod 755 ./VBoxLinuxAdditions.run && sh VBoxLinuxAdditions.run && sudo apt install build-essential linux-headers-$(uname -r) && apt-get install linux-headers-amd64 && apt install linux-headers-6.5.0-kali2-amd64 && apt install gcc make perl -y && apt install -y virtualbox && apt install -y virtualbox-dkms && apt install -y virtualbox-ext-pack && apt install -y virtualbox-guest-utils && apt install -y virtualbox-qt && apt install -y virtualbox-guest-additions-iso && apt install -y virtualbox-source && apt install -y virtualbox-guest-x11 && apt install -y virtualenv && apt install -y virtualenvwrapper && apt install -y virtualenvwrapper-doc  && apt install -y virtualgps  && apt install -y virtualgps &&/sbin/rcvboxadd quicksetup all &&  lsmod | grep vboxguest && dpkg -l | grep virtualbox-guest && sudo apt install build-essential linux-headers-$(uname -r) && init 6
+   ```
+
+   # Additional to help u to esayly update and upgrade machine!
+   ``` bash
+   nano update.sh
+   ```
+   ```bash
+   #!/bin/bash
+   sudo apt-get -y update && sudo apt-get upgrade -y && sudo apt-get full-upgrade && sudo apt-get dist-upgrade -y && sudo apt autoremove -y
+   echo "All done boss"
+   ```
+   - to save 
+   ```bash 
+   ctrl + x and then Yes to save changes and hit Enter .
+   ```
+   - give Executable permision to bash file .
+   ```bash
+   chmod +x ./update.sh
+   ```
+   - To run file  directly
+   ```bash
+   ./update.sh
+   ````
+## Badges
+
+Add badges from somewhere like: [shields.io](https://shields.io/)
+
+[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
+[![GPLv3 License](https://img.shields.io/badge/License-GPL%20v3-yellow.svg)](https://opensource.org/licenses/)
+[![AGPL License](https://img.shields.io/badge/license-AGPL-blue.svg)](http://www.gnu.org/licenses/agpl-3.0)
+
