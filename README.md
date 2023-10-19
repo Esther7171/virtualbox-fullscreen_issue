@@ -1,4 +1,4 @@
-# Virtulabox full screen
+# Virtualbox full screen
 ### There are 2 ways :
 ### 1. ways
 #### if u want simple whole display to using without wasting time ! , and u didn't give a fu@k to additional feature try first method
