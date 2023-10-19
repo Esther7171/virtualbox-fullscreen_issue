@@ -29,7 +29,7 @@
  - open guest addition cd
  - Right-click at any blank area at folder (anywhere)
  
- - ![Screenshot 2023-10-17 234616](https://github.com/Esther7171/virtualox-fullscreen/assets/122229257/b9a5da29-6e95-4dfe-96bf-bc62843d9cbe)
+![Screenshot 2023-10-17 234616](https://github.com/Esther7171/virtualox-fullscreen/assets/122229257/b9a5da29-6e95-4dfe-96bf-bc62843d9cbe)
 
  - select open terminal
 
