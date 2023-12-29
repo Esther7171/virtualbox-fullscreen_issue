@@ -6,7 +6,7 @@
 
   ![Screenshot 2023-10-18 103256](https://github.com/Esther7171/virtualox-fullscreen/assets/122229257/80988676-eecd-4e55-b3dd-9e9efb3f1f8b)#
 
-- change display according to u .
+- change display according to yourself .
   
 ![Screenshot 2023-10-18 103312](https://github.com/Esther7171/virtualox-fullscreen/assets/122229257/0d65efb8-e6a4-4f7f-9bd5-9cb46837f731)
 
@@ -43,7 +43,7 @@
    ```
    - eles...
    ```bash
-    sun root
+    su 
    ```
 
    ![root](https://github.com/Esther7171/virtualox-fullscreen/assets/122229257/d7a11570-3b16-4503-b43b-8f3a6aaffed1)
@@ -60,7 +60,7 @@
    sudo apt install build-essential linux-headers-$(uname -r)
    ```
    ```bash
-   apt install linux-headers-6.5.0-kali2-amd64 
+   apt install linux-headers-6.5.0-kali3-amd64 
    ```
    ```bash
    apt-get install linux-headers-amd64 
