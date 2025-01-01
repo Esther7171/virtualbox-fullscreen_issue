@@ -12,13 +12,16 @@ If you're looking for a quick solution without needing advanced features, follow
 
 1. **Open Display Settings:**
    - Click on the Kali menu icon and search for **Display**.
-
-   ![Display Settings](https://github.com/Esther7171/virtualox-fullscreen/assets/122229257/80988676-eecd-4e55-b3dd-9e9efb3f1f8b)
+<div align="center">
+<img src="https://github.com/Esther7171/virtualox-fullscreen/assets/122229257/80988676-eecd-4e55-b3dd-9e9efb3f1f8b" height="500"></img>
+</div>
 
 2. **Adjust Display Resolution:**
    - Set the display resolution to your preference.
 
-   ![Adjust Resolution](https://github.com/Esther7171/virtualox-fullscreen/assets/122229257/0d65efb8-e6a4-4f7f-9bd5-9cb46837f731)
+<div align="center">
+<img src="https://github.com/Esther7171/virtualox-fullscreen/assets/122229257/0d65efb8-e6a4-4f7f-9bd5-9cb46837f731" height="500"></img>
+</div>
 
 ## 2. Install Guest Additions Manually
 
@@ -29,10 +32,15 @@ If the first method doesn't work, or you need advanced functionality, follow the
 VirtualBox may not properly detect the Kali Linux ISO, as shown below:
 
 - **Kali ISO Not Detected Properly:**
-  ![Kali ISO Issue](https://github.com/Esther7171/virtualox-fullscreen/assets/122229257/afe655bb-c8fb-40de-a937-306e76ac1a56)
+<div align="center">
+<img src="https://github.com/Esther7171/virtualox-fullscreen/assets/122229257/afe655bb-c8fb-40de-a937-306e76ac1a56" height="500"></img>
+</div>
 
 - **Ubuntu ISO Detected Correctly:**
-  ![Ubuntu ISO](https://github.com/Esther7171/virtualox-fullscreen/assets/122229257/488c0a56-532e-48ed-861f-cbbedcbec425)
+
+<div align="center">
+<img src="https://github.com/Esther7171/virtualox-fullscreen/assets/122229257/488c0a56-532e-48ed-861f-cbbedcbec425" height="500"></img>
+</div>
 
 ### Steps to Install Guest Additions
 
@@ -40,15 +48,22 @@ VirtualBox may not properly detect the Kali Linux ISO, as shown below:
 - Navigate to **Devices** in the VirtualBox menu.
   - Click **Insert Guest Additions CD** or **Upgrade Guest Additions**.
 
-  ![Insert Guest Additions](https://github.com/Esther7171/virtualox-fullscreen/assets/122229257/90d22b87-764f-42f2-951e-8646e409064a)
+<div align="center">
+<img src="https://github.com/Esther7171/virtualox-fullscreen/assets/122229257/90d22b87-764f-42f2-951e-8646e409064a" height="500"></img>
+</div>
+
 
 #### Step 2: Open Terminal in the CD Directory
 1. Open the CD folder.
 2. Right-click on any blank area and select **Open Terminal**.
 
-   ![Open Terminal](https://github.com/Esther7171/virtualox-fullscreen/assets/122229257/b9a5da29-6e95-4db3-bc62843d9cbe)
+<div align="center">
+<img src="https://github.com/Esther7171/virtualox-fullscreen/assets/122229257/b9a5da29-6e95-4db3-bc62843d9cbe" height="500"></img>
+</div>
 
-   ![Select Open Terminal](https://github.com/Esther7171/virtualox-fullscreen/assets/122229257/71dd788f-bc0f-4db3-bc6e-b1d5c5b9e40b)
+<div align="center">
+<img src="https://github.com/Esther7171/virtualox-fullscreen/assets/122229257/71dd788f-bc0f-4db3-bc6e-b1d5c5b9e40b" height="500"></img>
+</div>
 
 3. Gain root privileges:
    - Set a root password (if not already set):
@@ -102,7 +117,9 @@ VirtualBox may not properly detect the Kali Linux ISO, as shown below:
 1. In VirtualBox, go to **View** > **Auto-resize Guest Display**.
 2. Select **Full Screen** mode.
 
-   ![Full Screen](https://github.com/Esther7171/virtualox-fullscreen/assets/122229257/85f6179a-68be-4190-b115-5afc525ed470)
+<div align="center">
+<img src="https://github.com/Esther7171/virtualox-fullscreen/assets/122229257/85f6179a-68be-4190-b115-5afc525ed470" height="500"></img>
+</div>
 
 ---
 
