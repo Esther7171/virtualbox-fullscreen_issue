@@ -1,7 +1,3 @@
-Here's a cleaned-up and professionalized version of your repository documentation:
-
----
-
 # VirtualBox Full Screen Guide
 
 This guide provides two approaches to enabling full-screen mode in VirtualBox for Kali Linux. Choose the method that best suits your needs.
