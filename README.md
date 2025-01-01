@@ -1,163 +1,153 @@
-# Virtualbox full screen
-### There are 2 ways :
-### 1. ways
-#### if u want simple whole display to using without wasting time ! , and u didn't give a fu@k to additional feature try first method
-- tap on kali icon and search for display .
+Here's a cleaned-up and professionalized version of your repository documentation:
 
-  ![Screenshot 2023-10-18 103256](https://github.com/Esther7171/virtualox-fullscreen/assets/122229257/80988676-eecd-4e55-b3dd-9e9efb3f1f8b)#
+---
 
-- change display according to yourself .
-  
-![Screenshot 2023-10-18 103312](https://github.com/Esther7171/virtualox-fullscreen/assets/122229257/0d65efb8-e6a4-4f7f-9bd5-9cb46837f731)
+# VirtualBox Full Screen Guide
 
-## 2. way 
-### Manually install vboxguest-additions we going to continue it..
-# Why this is happend
-## It happend because virtual box unable to detect kali iso properly as u see in this image the kali iso not be detected properly so we need to install guest additions manually
-![kali iso](https://github.com/Esther7171/virtualox-fullscreen/assets/122229257/afe655bb-c8fb-40de-a937-306e76ac1a56)
-## In next image ubuntu iso is detected properly and we dont need to install guest-Addition on ubuntu manually (dont click on box eles u need to install it manually )
-![ubuntu](https://github.com/Esther7171/virtualox-fullscreen/assets/122229257/488c0a56-532e-48ed-861f-cbbedcbec425)
+This guide provides two approaches to enabling full-screen mode in VirtualBox for Kali Linux. Choose the method that best suits your needs.
 
-# step: 1. Insert CD
-- top left corner tap on device :
-    - => insert guest addition cd
-    - => upgrade guest addition
-   
-![insert guest iso](https://github.com/Esther7171/virtualox-fullscreen/assets/122229257/90d22b87-764f-42f2-951e-8646e409064a)
+## 1. Simple Display Adjustment
 
-# step: 2 open in terminal
- - open guest addition cd
- - Right-click at any blank area at folder (anywhere)
- 
-![Screenshot 2023-10-17 234616](https://github.com/Esther7171/virtualox-fullscreen/assets/122229257/b9a5da29-6e95-4dfe-96bf-bc62843d9cbe)
+If you're looking for a quick solution without needing advanced features, follow these steps:
 
- - select open terminal
+1. **Open Display Settings:**
+   - Click on the Kali menu icon and search for **Display**.
 
-![open in terminal](https://github.com/Esther7171/virtualox-fullscreen/assets/122229257/71dd788f-bc0f-4db3-bc6e-b1d5c5b9e40b)
+   ![Display Settings](https://github.com/Esther7171/virtualox-fullscreen/assets/122229257/80988676-eecd-4e55-b3dd-9e9efb3f1f8b)
 
- - give root permision 
+2. **Adjust Display Resolution:**
+   - Set the display resolution to your preference.
 
- - if...
-   ```bash
-    sudo passwd root
-   ```
-   - eles...
-   ```bash
-    su 
-   ```
+   ![Adjust Resolution](https://github.com/Esther7171/virtualox-fullscreen/assets/122229257/0d65efb8-e6a4-4f7f-9bd5-9cb46837f731)
 
-   ![root](https://github.com/Esther7171/virtualox-fullscreen/assets/122229257/d7a11570-3b16-4503-b43b-8f3a6aaffed1)
-   
-   # step3 Install
+## 2. Install Guest Additions Manually
+
+If the first method doesn't work, or you need advanced functionality, follow these steps.
+
+### Why is Manual Installation Necessary?
+
+VirtualBox may not properly detect the Kali Linux ISO, as shown below:
+
+- **Kali ISO Not Detected Properly:**
+  ![Kali ISO Issue](https://github.com/Esther7171/virtualox-fullscreen/assets/122229257/afe655bb-c8fb-40de-a937-306e76ac1a56)
+
+- **Ubuntu ISO Detected Correctly:**
+  ![Ubuntu ISO](https://github.com/Esther7171/virtualox-fullscreen/assets/122229257/488c0a56-532e-48ed-861f-cbbedcbec425)
+
+### Steps to Install Guest Additions
+
+#### Step 1: Insert the Guest Additions CD
+- Navigate to **Devices** in the VirtualBox menu.
+  - Click **Insert Guest Additions CD** or **Upgrade Guest Additions**.
+
+  ![Insert Guest Additions](https://github.com/Esther7171/virtualox-fullscreen/assets/122229257/90d22b87-764f-42f2-951e-8646e409064a)
+
+#### Step 2: Open Terminal in the CD Directory
+1. Open the CD folder.
+2. Right-click on any blank area and select **Open Terminal**.
+
+   ![Open Terminal](https://github.com/Esther7171/virtualox-fullscreen/assets/122229257/b9a5da29-6e95-4db3-bc62843d9cbe)
+
+   ![Select Open Terminal](https://github.com/Esther7171/virtualox-fullscreen/assets/122229257/71dd788f-bc0f-4db3-bc6e-b1d5c5b9e40b)
+
+3. Gain root privileges:
+   - Set a root password (if not already set):
+     ```bash
+     sudo passwd root
+     ```
+   - Switch to root:
+     ```bash
+     su
+     ```
+
+#### Step 3: Install Guest Additions
+1. Make the installer executable and run it:
    ```bash
    chmod 755 ./VBoxLinuxAdditions.run
-   ```
-   ```bash
    sh VBoxLinuxAdditions.run
    ```
-   - if it not work try this at end once more
+
+2. If the installation fails, install the required packages:
    ```bash
    sudo apt install build-essential linux-headers-$(uname -r)
+   sudo apt install gcc make perl -y
    ```
+
+3. Run the installer again:
    ```bash
-   apt install linux-headers-6.5.0-kali3-amd64 
-   ```
-   ```bash
-   apt-get install linux-headers-amd64 
-   ```
-   ```bash
-   apt install gcc make perl -y
-   ```
-- run this it download all necessary pakages :
-   ```bash
-   apt install -y virtualbox && apt install -y virtualbox-dkms && apt install -y virtualbox-ext-pack && apt install -y virtualbox-guest-utils && apt install -y virtualbox-qt && apt install -y virtualbox-guest-additions-iso && apt install -y virtualbox-source && apt install -y virtualbox-guest-x11 && apt install -y virtualenv && apt install -y virtualenvwrapper && apt install -y virtualenvwrapper-doc  && apt install -y virtualgps  && apt install -y virtualgps 
-   ```
-  ```bash
    sh VBoxLinuxAdditions.run
    ```
-   - to build kernal
+
+4. Build the kernel modules:
    ```bash
    /sbin/rcvboxadd quicksetup all
    ```
-   - Now restart your system
+
+5. Restart your system:
    ```bash
    init 6
    ```
-   - Check vbox guest addition download
+
+6. Verify installation:
    ```bash
    lsmod | grep vboxguest
    ```
-   - it show like
-   ```bash
-   root@kali# lsmod | grep vboxguest
 
-          vboxguest             219348  7 vboxsf
-   ``` 
-   - Run it as well to prevent any unpacking :
+7. To troubleshoot issues:
    ```bash
-   dpkg -l | grep virtualbox-guest
-   ```
-   - Last run again
-   ```bash
-   sudo apt install build-essential linux-headers-$(uname -r)
-   ```
-   # tap on top left corner view
-  * 1. tap on auto-resize guest display
-  * 2. tap on Full screen (if it dosn't fit)
-  * 3. bottom mid auto-resize guest display
-  
-   ![tap on view](https://github.com/Esther7171/virtualox-fullscreen/assets/122229257/85f6179a-68be-4190-b115-5afc525ed470)
-    
-   # if this work so ok ! Eles :-
-   ```bash
-   sudo modprobe vboxadd
-   ```
-   ```bash
-   sudo modprobe vboxvfs
-   ```
-   - check it out
-   ```bash
-   nano /var/log/VBoxGuestAdditions.log 
-   ```
-   ```bash
-   uname -a 
-   ```
-   ```bash
-   apt-cache search linux-headers
+   nano /var/log/VBoxGuestAdditions.log
    ```
 
-   # One line command
-   ```bash
-   sudo passwd root && chmod 755 ./VBoxLinuxAdditions.run && sh VBoxLinuxAdditions.run && sudo apt install build-essential linux-headers-$(uname -r) && apt-get install linux-headers-amd64 && apt install linux-headers-6.5.0-kali2-amd64 && apt install gcc make perl -y && apt install -y virtualbox && apt install -y virtualbox-dkms && apt install -y virtualbox-ext-pack && apt install -y virtualbox-guest-utils && apt install -y virtualbox-qt && apt install -y virtualbox-guest-additions-iso && apt install -y virtualbox-source && apt install -y virtualbox-guest-x11 && apt install -y virtualenv && apt install -y virtualenvwrapper && apt install -y virtualenvwrapper-doc  && apt install -y virtualgps  && apt install -y virtualgps &&/sbin/rcvboxadd quicksetup all &&  lsmod | grep vboxguest && dpkg -l | grep virtualbox-guest && sudo apt install build-essential linux-headers-$(uname -r) && init 6
-   ```
+#### Step 4: Enable Full Screen
+1. In VirtualBox, go to **View** > **Auto-resize Guest Display**.
+2. Select **Full Screen** mode.
 
-   # Additional to help u to esayly update and upgrade machine!
-   ``` bash
+   ![Full Screen](https://github.com/Esther7171/virtualox-fullscreen/assets/122229257/85f6179a-68be-4190-b115-5afc525ed470)
+
+---
+
+## One-Line Command
+For advanced users, here’s a single command to automate the setup:
+```bash
+sudo passwd root && chmod 755 ./VBoxLinuxAdditions.run && sh VBoxLinuxAdditions.run && sudo apt install build-essential linux-headers-$(uname -r) && apt install gcc make perl -y && apt install -y virtualbox virtualbox-dkms virtualbox-ext-pack virtualbox-guest-utils virtualbox-qt virtualbox-guest-additions-iso && /sbin/rcvboxadd quicksetup all && init 6
+```
+
+---
+
+## Update and Upgrade Script
+To keep your system updated, create an automated script:
+
+1. Create a file named `update.sh`:
+   ```bash
    nano update.sh
    ```
+
+2. Add the following content:
    ```bash
    #!/bin/bash
-   sudo apt-get -y update && sudo apt-get upgrade -y && sudo apt-get full-upgrade && sudo apt-get dist-upgrade -y && sudo apt autoremove -y
-   echo "All done boss"
+   sudo apt-get -y update && sudo apt-get -y upgrade && sudo apt-get -y full-upgrade && sudo apt-get -y dist-upgrade && sudo apt autoremove -y
+   echo "All done!"
    ```
-   - to save 
-   ```bash 
-   ctrl + x and then Yes to save changes and hit Enter .
-   ```
-   - give Executable permision to bash file .
+
+3. Save and close the file (`Ctrl + X`, then `Y`, and `Enter`).
+
+4. Make the script executable:
    ```bash
-   chmod +x ./update.sh
+   chmod +x update.sh
    ```
-   - To run file  directly
+
+5. Run the script:
    ```bash
    ./update.sh
-   ````
+   ```
+
+---
+
 ## Badges
 
-Add badges from somewhere like: [shields.io](https://shields.io/)
-
-[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
-[![GPLv3 License](https://img.shields.io/badge/License-GPL%20v3-yellow.svg)](https://opensource.org/licenses/)
+[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)  
+[![GPLv3 License](https://img.shields.io/badge/License-GPL%20v3-yellow.svg)](https://opensource.org/licenses/)  
 [![AGPL License](https://img.shields.io/badge/license-AGPL-blue.svg)](http://www.gnu.org/licenses/agpl-3.0)
-https://www.virtualbox.org/wiki/Linux%20build%20instructions
 
+For more information, visit the [VirtualBox Linux build instructions](https://www.virtualbox.org/wiki/Linux%20build%20instructions).
+---
